@@ -56,9 +56,9 @@ void checkAsteroidCollisions() {
 
     double dx = ship.getCenterX() - a.getCenterX();
     double dy = ship.getCenterY() - a.getCenterY();
-    double dist = Math.sqrt(dx*dx + dy*dy);
+    double dista = Math.sqrt(dx*dx + dy*dy);
 
-    if (dist < 25) {
+    if (dista < 25) {
       asteroids.remove(i);  
     }
   }
