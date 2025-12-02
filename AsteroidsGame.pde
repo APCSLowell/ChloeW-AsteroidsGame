@@ -1,6 +1,6 @@
 Spaceship ship;
 Star[] myStars;
-ArrayList<Asteroid>asteroids = new ArrayList<Asteroid>(); 
+ArrayList<Asteroid>asteroids = new ArrayList<Asteroid>();
 int screenSize = 1000;
 public void setup()
 {
@@ -11,7 +11,7 @@ public void setup()
     myStars[i] = new Star((int)(Math.random()*screenSize), (int)(Math.random()*screenSize));
   }
   
-  for (int i = 0; i < 10; i++) {               
+  for (int i = 0; i < 10; i++) {
     asteroids.add(new Asteroid());
   }
 }
@@ -59,7 +59,7 @@ void checkAsteroidCollisions() {
     double dista = Math.sqrt(dx*dx + dy*dy);
 
     if (dista < 25) {
-      asteroids.remove(i);  
+      asteroids.remove(i);
     }
   }
 }
