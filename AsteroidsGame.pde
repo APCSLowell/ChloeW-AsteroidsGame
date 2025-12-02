@@ -31,7 +31,7 @@ public void draw()
   ship.show();
   ship.move();
   
-  //checkAsteroidCollisions();
+  checkAsteroidCollisions();
 }
 
 public void keyPressed()
@@ -50,7 +50,6 @@ public void keyPressed()
   }
 }
 
-/*
 void checkAsteroidCollisions() {
   for (int i = asteroids.size() - 1; i >= 0; i--) {
     Asteroid a = asteroids.get(i);
@@ -64,4 +63,3 @@ void checkAsteroidCollisions() {
     }
   }
 }
-*/
