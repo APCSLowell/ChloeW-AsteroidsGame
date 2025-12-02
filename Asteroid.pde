@@ -14,8 +14,8 @@ class Asteroid extends Floater {
     float radius = (float)(Math.random()*30 + 20);
 
     for (int i = 0; i < corners; i++) {
-      double angle = Math.toRadians(360.0 / corners * i);
-
+      //double angle = Math.toRadians(360.0 / corners * i);
+      double angle = 2*PI(360.0 / corners * i)/360.0;
       double wobble = 0.6 + Math.random() * 0.8;
 
       xCorners[i] = (int)(radius * wobble * Math.cos(angle));
