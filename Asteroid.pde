@@ -34,7 +34,6 @@ class Asteroid extends Floater {
     myPointDirection = Math.random() * 360;
   }
 
-  @Override
   public void move() {
     super.move();
     turn(rotSpeed);
